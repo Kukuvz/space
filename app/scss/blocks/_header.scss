@@ -1,0 +1,65 @@
+.header {
+    background-image: url('../images/main-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 75px 0 30px;
+    }
+    &__content {
+        max-width: 600px;
+    }
+    &__title {
+        font-family: 'Space Age Cyrillic', sans-serif;
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 400;
+        margin-bottom: 16px;
+        span {
+            font-size: 110px;
+        }
+    }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 49px;
+    }
+    &__btn {
+        padding: 15px 10px 16px;
+        font-size: 24px;
+        line-height: 29px;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        color: inherit;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+    }
+    &__descr {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+        margin-bottom: 7%;
+    }
+    &__descr-text {
+        width: 165px;
+        font-size: 14px;
+        line-height: 17px;
+        & + .header__descr-text {
+            margin-left: 52px;
+        }
+    }
+}
