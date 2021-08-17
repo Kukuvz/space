@@ -1,6 +1,7 @@
-html,
-body {
-	height: 100%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -29,7 +30,24 @@ a {
   padding: 0 10px;
 }
 
+.button {
+  background-color: transparent;
+  color: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #FFFFFF;
+  padding: 20px 45px;
+}
 
+.title {
+  font-family: 'Space Age Cyrillic', sans-serif;
+  padding: 100px 0;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+}
 
-
-
+foreignObject {
+  text-align: left;
+}

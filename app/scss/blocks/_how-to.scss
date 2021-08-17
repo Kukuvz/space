@@ -1,0 +1,29 @@
+.how-to {
+    background-image: url('../images/howto-bg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    &__box {
+        margin-left: 177px;
+        & circle,
+        & text,
+        & foreignObject {
+            transition: all .5s;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        & g:hover circle {
+            r: 20px;
+            fill: $blue-color;
+        }
+        & g:hover text {
+            fill: $blue-color;
+            font-size: 36px;
+        }
+        & g:hover foreignObject {
+            color: $blue-color;
+            font-size: 22px;
+        }
+    }
+}

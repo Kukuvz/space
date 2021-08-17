@@ -1,0 +1,52 @@
+.special-offer {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 500px;
+    }
+    &__item-box {
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #fff;
+        margin-bottom: 25px;
+        padding: 40px 75px;
+        text-align: center;
+    }
+    &__item-text {
+        font-size: 24px;
+        line-height: 29px;
+        width: 236px;
+        margin: 0 auto;
+        span {
+            color: $red-color;
+        }
+    }
+    &__old-price {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: right;
+        margin-bottom: 16px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 68px;
+            height: 1px;
+            top: 7px;
+            right: 0;
+            background-color: $red-color;
+            transform: rotate(17.1deg);
+        }
+    }
+    &__new-price {
+        font-size: 48px;
+        line-height: 57px;
+    }
+    &__button {
+        width: 100%;
+    }
+}
