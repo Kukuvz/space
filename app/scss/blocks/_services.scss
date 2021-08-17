@@ -1,0 +1,58 @@
+.services {
+    margin-bottom: 200px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box-list {
+        margin-right: 80px;
+        width: 620px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    &__list-title {
+        margin-bottom: 25px;
+    }
+    &__list {
+        list-style: none;
+        margin-bottom: 25px;
+    }
+    &__list-item {
+        padding-left: 36px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+    }
+    &__description {
+        font-size: 12px;
+        line-height: 14px;
+        color: #E5E5E5;
+    }
+    &__buttons {
+        width: 500px;
+    }
+    &__btn {
+        width: 100%;
+    }
+    &__btn--first {
+        margin-bottom: 50px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 35px;
+            background-image: url('../images/services-foto.png');
+            width: 192px;
+            height: 150px;
+        }
+    }
+}

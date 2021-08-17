@@ -1,0 +1,41 @@
+.footer {
+    background-image: url('../images/footer-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 150px;
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__text {
+        width: 165px;
+        margin-right: 50px;
+        p + p {
+            margin-top: 50px;
+        }
+    }
+    &__menu {
+        list-style: none;
+        width: 120px;
+        margin-right: 102px;
+    }
+    &__menu-item,
+    &__links-item {
+        margin-bottom: 20px;
+    }
+    &__menu-link,
+    &__links-link {
+        text-transform: uppercase;
+        transition: color .5s;
+    }
+    &__menu-link:hover,
+    &__links-link:hover {
+        color: $red-color;
+    }
+    &__links {
+        list-style: none;
+        width: 166px;
+    }
+
+}

@@ -1,0 +1,30 @@
+.slider {
+    text-align: center;
+    &__inner {
+        margin-bottom: 50px;
+        border: 1px solid #FFFFFF;
+        padding: 100px 0;
+    }
+    &__description {
+        font-family: 'Space Age Cyrillic';
+        font-size: 24px;
+        line-height: 30px;
+    }
+    &__box-img {
+        margin: 0 auto;
+    }
+    &__arrow {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        z-index: 5;
+    }
+    &__arrow-left {
+        left: 75px;
+    }
+    &__arrow-right {
+        right: 65px;
+    }
+}

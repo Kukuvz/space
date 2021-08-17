@@ -17,23 +17,23 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">О НАС</a>
+                <a class="menu__link" href="#about">О НАС</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">СТОИМОСТЬ</a>
+                <a class="menu__link" href="#special-offer">СТОИМОСТЬ</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">ДОП. УСЛУГИ</a>
+                <a class="menu__link" href="#services">ДОП. УСЛУГИ</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">ГАРАНТИИ</a>
+                <a class="menu__link" href="#quarantees">ГАРАНТИИ</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">НОВОСТИ</a>
+                <a class="menu__link" href="#to-book">НОВОСТИ</a>
               </li>
             </ul>
           </nav>
-          <a class="phone" href="tel:080000000000">0 800 000 000 00</a>
+          <a class="phone" href="tel:08000000000">0 800 000 00 00</a>
           <button class="login">
             <img class="login__img" src="images/login.png" alt="login img">
           </button>
@@ -47,7 +47,7 @@
             <p>Будущее уже наступило!</p>
             <p>Осуществи мечту детства!</p>
           </div>
-          <button class="header__btn button">
+          <button class="button header__btn">
             Хочу быть космонавтом!
           </button>
         </div>
@@ -64,9 +64,9 @@
     </div>
   </header>
   <main class="main">
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
-        <h2 class="title about title">О нас</h2>
+        <h2 class="title about__title">О нас</h2>
         <div class="about__item">
           <img class="about__img" src="images/richard-branson.jpg" alt="richard-branson">
           <div class="about__content">
@@ -281,7 +281,7 @@
         </div>
       </div>
     </section>
-    <section class="to-book">
+    <section id="to-book" class="to-book">
       <div class="container">
         <div class="to-book__inner">
           <h2 class="title to-book__title">Успей <br> забронировать!</h2>
@@ -296,7 +296,7 @@
       </div>
     </section>
     <section class="info">
-      <div class="special-offer">
+      <div id="special-offer" class="special-offer">
         <div class="container">
           <h2 class="title special-offer__title">
             Спец <br> предложения
@@ -337,9 +337,149 @@
           </div>
         </div>
       </div>
+
+      <div id="services" class="services">
+        <div class="container">
+          <h2 class="title services__title">
+            Дополнительные <br> услуги
+          </h2>
+          <div class="services__inner">
+            <div class="services__box-list">
+              <p class="services__list-title">
+                С Вами полетит профессиональный фотограф
+              </p>
+              <ul class="services__list">
+                <li class="services__list-item">
+                  20 фотографий в профессиональной обработке
+                </li>
+                <li class="services__list-item">
+                  фото книга
+                </li>
+                <li class="services__list-item">
+                  магнит на холодильник в подарок
+                </li>
+              </ul>
+              <p class="services__description">
+                Стоимость фотосессии в невесомости 100 000 $. Доплати 50 000 $ и получи все фото в цветокоррекции на
+              диске.
+              </p>
+            </div>
+            <div class="services__buttons">
+              <button class="button services__btn services__btn--first">
+                КУПИТЬ УСЛУГИ ФОТОГРАФА
+              </button>
+              <button class="button services__btn">
+                ХОЧУ И ДИСК
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="container">
+          <div class="slider__inner">
+            <div class="slider__box">
+              <div class="slider__box-item">
+                <img class="slider__box-img" src="images/slider1.jpg" alt="slider1">
+              </div>
+              <div class="slider__box-item">
+                <img class="slider__box-img" src="images/slider1.jpg" alt="slider1">
+              </div>
+              <div class="slider__box-item">
+                <img class="slider__box-img" src="images/slider1.jpg" alt="slider1">
+              </div>
+            </div>
+          </div>
+          <p class="slider__description">
+            Ты знаешь о Космическом законе – представь себе то, что ты хочешь, и оно войдет в твою жизнь.
+          </p>
+        </div>
+      </div>
+
+    </section>
+    <section id="quarantees" class="contacts">
+      <div class="container">
+        <div class="contacts__inner">
+          <div class="contacts__box">
+            <h2 class="title contacts__title">
+              Контакты
+            </h2>
+            <p class="contacts__box-text">
+              Оставь свои контакты и мы перезвоним тебе в ближайшие 100 лет!
+            </p>
+            <form class="contacts__form">
+              <input class="contacts__form-input" placeholder="ФИО" type="text">
+              <input class="contacts__form-input" placeholder="Имя ребенка или внука (на всякий случай)" type="text">
+              <input class="contacts__form-input" placeholder="Телефон" type="tel">
+              <button class="button contacts__form-btn" type="submit">
+                ЗАБРОНИРОВАТЬ ПОЛЕТ
+              </button>
+            </form>
+          </div>
+          <div class="contacts__quarantees">
+            <h2 class="title contacts__quarantees-title">
+              Гарантии
+            </h2>
+            <p class="contacts__quarantees-text">
+              Ни одна моя ракета еще не сделала удачную попытку, потому что в ней не было тебя!
+              Будь первым! Колонизируй Марс!
+              Илон Маск
+            </p>
+            <img class="contacts__quarantees-img" src="images/mask-guarentee.png" alt="mask-guarentee">
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__text">
+          <p>
+            Служба поддержки работает межгалактично и суборбитально
+          </p>
+          <p>
+            График приема посетителей строго по записи
+          </p>
+        </div>
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#about">О НАС</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#special-offer">СТОИМОСТЬ</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#services">ДОП. УСЛУГИ</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#quarantees">ГАРАНТИИ</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#to-book">НОВОСТИ</a>
+          </li>
+        </ul>
+        <ul class="footer__links">
+          <li class="footer__links-item">
+            <a class="footer__links-link" href="#">spacex.com</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__links-link" href="#">blueorigin.com</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__links-link" href="#">virgingalactic.com</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__links-link" href="tel:08000000000">0 800 000 00 00</a>
+          </li>
+          <li class="footer__links-item">
+            <a class="footer__links-link" href="#">МКС</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
 
   <script src="js/main.min.js"></script>
