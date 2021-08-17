@@ -18,4 +18,36 @@
         line-height: 21px;
         text-transform: uppercase;
     }
+    &-btn {
+        display: none;
+        width: 40px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        position: relative;
+        z-index: 20;
+        cursor: pointer;
+        height: 30px;
+        span {
+            display: block;
+            height: 2px;
+            background-color: #fff;
+            position: relative;
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 2px;
+                background-color: #fff;
+                left: 0;
+            }
+            &::before {
+                top: -10px;
+            }
+            &::after {
+                top: 10px;
+            }
+        }
+    }
 }
